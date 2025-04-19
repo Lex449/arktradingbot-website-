@@ -4,112 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ARK Trading Bot</title>
-  <meta name="description" content="A.R.K. – Made in Bali. Engineered with German Precision. Dein persönlicher Trading-Mentor mit Stil, Signal und Substanz.">
-  <link rel="icon" type="image/png" href="favicon.ico" />
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0f1116;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .lang-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: none;
-      color: #aaa;
-      border: 1px solid #444;
-      padding: 6px 12px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .logo {
-      width: 140px;
-      margin-bottom: 20px;
-      filter: drop-shadow(0 0 10px #00d1ff);
-    }
-
-    h1 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .description {
-      font-size: 16px;
-      opacity: 0.85;
-      margin-bottom: 30px;
-      max-width: 320px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
-      background: linear-gradient(to right, #00c4ff, #0077b6);
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 16px;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: linear-gradient(to right, #0077b6, #00c4ff);
-    }
-
-    .footer {
-      margin-top: 40px;
-      font-size: 13px;
-      opacity: 0.4;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body>
-  <button class="lang-toggle" onclick="toggleLang()">Deutsch</button>
+  <header>
+    <img src="ark-logo.png" alt="ARK Logo" class="logo" />
+    <h1>ARK Trading Bot</h1>
+    <p class="subtitle">Made in Bali. Engineered with German Precision.</p>
+  </header>
 
-  <img src="ark_logo.png" alt="ARK Logo" class="logo" />
+  <main>
+    <section class="hero">
+      <h2>Your Personal AI Trading Mentor</h2>
+      <p>Empowering beginners and dreamers to master the markets – with precision, clarity, and confidence.</p>
+      <div class="lang-toggle">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('de')">Deutsch</button>
+      </div>
+    </section>
 
-  <h1 id="headline">ARK – Made in Bali. Engineered with German Precision.</h1>
+    <section class="links">
+      <a href="https://www.instagram.com/arkisnow" target="_blank" class="button">Follow us on Instagram</a>
+      <a href="https://t.me/arktradingteam" target="_blank" class="button telegram">Join Telegram</a>
+    </section>
+  </main>
 
-  <p class="description" id="desc">
-    Your personal trading mentor. Instant signals, smart analysis & powerful style.
-  </p>
-
-  <a href="https://t.me/arktradingteam" class="btn" id="cta">Launch Telegram Bot</a>
-  <a href="https://instagram.com/arkisnow" target="_blank" class="btn">Instagram</a>
-
-  <div class="footer">© 2025 ARK Trading Bot. All rights reserved.</div>
+  <footer>
+    <p>&copy; 2025 ARK Trading Bot. All rights reserved.</p>
+  </footer>
 
   <script>
-    let isGerman = false;
-
-    function toggleLang() {
-      isGerman = !isGerman;
-      document.querySelector(".lang-toggle").innerText = isGerman ? "English" : "Deutsch";
-
-      document.getElementById("headline").innerText = isGerman
-        ? "ARK – Gemacht in Bali. Veredelt mit deutscher Präzision."
-        : "ARK – Made in Bali. Engineered with German Precision.";
-
-      document.getElementById("desc").innerText = isGerman
-        ? "Dein persönlicher Trading-Mentor. Smarte Signale, starke Analysen & maximaler Stil."
-        : "Your personal trading mentor. Instant signals, smart analysis & powerful style.";
-
-      document.getElementById("cta").innerText = isGerman
-        ? "Telegram-Bot starten"
-        : "Launch Telegram Bot";
+    function setLanguage(lang) {
+      if (lang === 'de') {
+        document.querySelector('h2').innerText = 'Dein persönlicher KI-Trading-Mentor';
+        document.querySelector('.hero p').innerText = 'Unterstützt Anfänger und Visionäre dabei, die Märkte zu meistern – mit Präzision, Klarheit und Vertrauen.';
+        document.querySelector('.button').innerText = 'Folge uns auf Instagram';
+        document.querySelector('.telegram').innerText = 'Telegram beitreten';
+      } else {
+        document.querySelector('h2').innerText = 'Your Personal AI Trading Mentor';
+        document.querySelector('.hero p').innerText = 'Empowering beginners and dreamers to master the markets – with precision, clarity, and confidence.';
+        document.querySelector('.button').innerText = 'Follow us on Instagram';
+        document.querySelector('.telegram').innerText = 'Join Telegram';
+      }
     }
   </script>
 </body>
