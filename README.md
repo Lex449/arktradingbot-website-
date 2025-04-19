@@ -1,4 +1,4 @@
-# A.R.K. Trading Bot – Landingpage
+# A.R.K. Trading Bot und Mentor – Landingpage
 
 **Website:** [arktradingbot.com](https://arktradingbot.com)  
 **Instagram:** [@arkisnow](https://www.instagram.com/arkisnow)
