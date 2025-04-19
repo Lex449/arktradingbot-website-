@@ -2,29 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>A.R.K. Trading Bot</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <meta name="description" content="A.R.K. – Made in Bali. Engineered with German Precision. The ultimate trading mentor bot.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARK – Made in Bali. Engineered with German Precision.</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #f0f0f0;
+      text-align: center;
+    }
+    header {
+      background: linear-gradient(90deg, #ff7300, #ff4e00);
+      padding: 30px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #1a1a1a;
+      border-radius: 12px;
+    }
+    input[type="email"] {
+      padding: 12px;
+      width: 80%;
+      max-width: 300px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+    button {
+      padding: 12px 20px;
+      background: #ff4e00;
+      border: none;
+      color: white;
+      font-weight: bold;
+      margin-top: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff7300;
+    }
+    .insta-button {
+      display: inline-block;
+      margin-top: 25px;
+      background-color: #e1306c;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .insta-button:hover {
+      background-color: #c1275b;
+    }
+    footer {
+      margin: 50px 0 20px;
+      font-size: 0.8em;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
 
+  <header>
+    <h1>Welcome to A.R.K.</h1>
+    <p>Made in Bali. Engineered with German Precision.</p>
+  </header>
+
   <div class="container">
-    <img src="assets/logo.png" alt="A.R.K. Logo" class="logo" />
-    <h1>A.R.K. Trading Bot</h1>
-    <p class="tagline">Made in Bali. Engineered with German Precision.</p>
-    <p class="coming-soon">The future of trading. Coming soon.</p>
+    <h2>Stay in the Loop</h2>
+    <p>Be the first to get updates on tools, releases & strategies.</p>
+    <form>
+      <input type="email" placeholder="Your email address" required />
+      <br />
+      <button type="submit">Subscribe</button>
+    </form>
 
     <a class="insta-button" href="https://www.instagram.com/arkisnow" target="_blank">
-      Folge uns auf Instagram
+      Follow @arkisnow on Instagram
     </a>
-
-    <form action="https://yourmailchimpformurl" method="post" class="newsletter-form" target="_blank">
-      <input type="email" name="EMAIL" placeholder="Deine E-Mail-Adresse" required />
-      <button type="submit">Benachrichtige mich</button>
-    </form>
   </div>
+
+  <footer>
+    &copy; 2025 ARK Trading Bot – All rights reserved.
+  </footer>
 
 </body>
 </html>
