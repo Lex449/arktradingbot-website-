@@ -1,42 +1,83 @@
-.insta-button {
-  display: inline-block;
-  margin-top: 20px;
-  background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af);
-  color: white;
-  padding: 12px 20px;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s;
+/* Allgemeines Design */
+body {
+  margin: 0;
+  padding: 0;
+  background: #0b0f1a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0f0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
 }
 
-.insta-button:hover {
-  opacity: 0.85;
+.container {
+  max-width: 800px;
+  padding: 40px 20px;
 }
 
-.newsletter-form {
-  margin-top: 30px;
+/* Logo */
+.logo {
+  max-width: 180px;
+  margin-bottom: 30px;
+  filter: drop-shadow(0 0 8px #00c8ff60);
 }
 
-.newsletter-form input[type="email"] {
-  padding: 10px;
-  border: none;
+/* Sprachumschalter */
+.language-switch {
+  margin-bottom: 25px;
+}
+
+.language-switch button {
+  background-color: #152030;
+  color: #e0f0ff;
+  border: 1px solid #00c8ff;
+  padding: 8px 14px;
+  margin: 0 5px;
   border-radius: 6px;
-  width: 250px;
-  max-width: 90%;
-  margin-right: 10px;
-}
-
-.newsletter-form button {
-  padding: 10px 15px;
-  border: none;
-  background-color: #00c9a7;
-  color: #fff;
-  border-radius: 6px;
-  font-weight: bold;
   cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
-.newsletter-form button:hover {
-  background-color: #00a08a;
+.language-switch button:hover {
+  background-color: #00c8ff;
+  color: #0b0f1a;
+}
+
+/* Textbereiche */
+.text h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Instagram Button */
+.btn {
+  display: inline-block;
+  background: #00c8ff;
+  color: #0b0f1a;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #0099cc;
+  color: white;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #888;
 }
