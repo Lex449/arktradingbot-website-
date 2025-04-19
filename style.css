@@ -1,40 +1,42 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0d1117;
-  color: #c9d1d9;
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-}
-
-.logo {
-  width: 120px;
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 2.2rem;
-  margin: 0;
-  color: #00c9a7;
-}
-
-.tagline {
-  font-size: 1.1rem;
-  color: #8b949e;
-  margin-top: 8px;
-}
-
-.coming-soon {
-  font-size: 1rem;
+.insta-button {
+  display: inline-block;
   margin-top: 20px;
-  color: #58a6ff;
+  background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.insta-button:hover {
+  opacity: 0.85;
+}
+
+.newsletter-form {
+  margin-top: 30px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  width: 250px;
+  max-width: 90%;
+  margin-right: 10px;
+}
+
+.newsletter-form button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #00c9a7;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #00a08a;
 }
