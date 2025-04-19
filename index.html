@@ -1,68 +1,105 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A.R.K. Trading Bot</title>
-  <meta name="description" content="A.R.K. – Made in Bali. Engineered with German Precision.">
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARK Trading Bot</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #0f1116;
+      font-family: Arial, sans-serif;
+      background: #0f1116;
       color: #ffffff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
+      padding: 20px;
     }
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 15px #00f0ff);
     }
 
-    .tagline {
-      font-size: 1.2em;
-      color: #00ffd0;
-      margin-bottom: 1.5em;
-      font-weight: bold;
+    .title {
+      font-size: 28px;
+      margin-bottom: 10px;
     }
 
-    .btn {
-      background-color: #00ffd0;
-      color: #000;
+    .subtitle {
+      font-size: 16px;
+      max-width: 300px;
+      margin-bottom: 30px;
+      opacity: 0.8;
+    }
+
+    .button {
+      background: linear-gradient(135deg, #00c4ff, #007fff);
+      border: none;
+      padding: 12px 24px;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
       text-decoration: none;
-      padding: 14px 28px;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 1em;
-      transition: background 0.3s;
     }
 
-    .btn:hover {
-      background-color: #00c9aa;
-    }
-
-    footer {
+    .lang-toggle {
       position: absolute;
-      bottom: 15px;
-      color: #666;
-      font-size: 0.85em;
+      top: 20px;
+      right: 20px;
+      background: none;
+      color: #aaa;
+      border: 1px solid #444;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .social {
+      margin-top: 40px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    .social a {
+      color: #00c4ff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
+  <button class="lang-toggle" onclick="toggleLang()">Deutsch</button>
+  <img src="F2ED0DC5-EC2E-47DF-94B8-A74BFA10BD9B.png" alt="ARK Logo" class="logo" />
+  <div class="title" id="title">ARK Trading Bot</div>
+  <div class="subtitle" id="subtitle">
+    Smart, fast and beginner-friendly. Built for your success.
+  </div>
+  <a href="https://t.me/arktradingteam" class="button" id="cta">Launch Telegram Bot</a>
+  <div class="social" id="social">
+    Follow us on <a href="https://instagram.com/arkisnow" target="_blank">Instagram</a>
+  </div>
 
-  <h1>A.R.K. Trading Bot</h1>
-  <div class="tagline">Made in Bali. Engineered with German Precision.</div>
-  <a class="btn" href="https://t.me/arktradingteam" target="_blank">Starte jetzt</a>
-
-  <footer>&copy; 2025 A.R.K. | All rights reserved</footer>
-
+  <script>
+    let isGerman = false;
+    function toggleLang() {
+      isGerman = !isGerman;
+      document.querySelector(".lang-toggle").innerText = isGerman ? "English" : "Deutsch";
+      document.getElementById("title").innerText = "ARK Trading Bot";
+      document.getElementById("subtitle").innerText = isGerman
+        ? "Intelligent, schnell und einsteigerfreundlich. Für deinen Erfolg gemacht."
+        : "Smart, fast and beginner-friendly. Built for your success.";
+      document.getElementById("cta").innerText = isGerman
+        ? "Telegram-Bot starten"
+        : "Launch Telegram Bot";
+      document.getElementById("social").innerHTML = isGerman
+        ? 'Folge uns auf <a href="https://instagram.com/arkisnow" target="_blank">Instagram</a>'
+        : 'Follow us on <a href="https://instagram.com/arkisnow" target="_blank">Instagram</a>';
+    }
+  </script>
 </body>
 </html>
