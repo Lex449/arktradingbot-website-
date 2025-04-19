@@ -3,75 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARK – Made in Bali. Engineered with German Precision.</title>
+  <title>ARK Trading Bot</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
+      font-family: Arial, sans-serif;
+      background: #0f1116;
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
+      height: 100vh;
       text-align: center;
     }
-
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.3em;
+    .logo {
+      width: 160px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 12px #00ffe1);
     }
-
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0.3em auto 2em auto;
-      line-height: 1.5;
+    .qr {
+      width: 200px;
+      margin: 20px 0;
     }
-
-    img {
-      max-width: 180px;
-      margin: 1.5em auto;
-    }
-
-    .button {
-      background: #ff5e62;
-      background: linear-gradient(to right, #ff9966, #ff5e62);
-      border: none;
-      padding: 14px 28px;
+    .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      background: linear-gradient(to right, #ff5e62, #ff9966);
       color: white;
-      font-size: 1rem;
+      border: none;
       border-radius: 6px;
+      cursor: pointer;
       text-decoration: none;
-      transition: transform 0.2s;
-      margin-top: 20px;
-      display: inline-block;
     }
-
-    .button:hover {
-      transform: scale(1.05);
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      opacity: 0.5;
+    .btn:hover {
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to A.R.K.</h1>
-  <p>Follow us on Instagram and stay updated on our trading revolution.</p>
-
-  <img src="ark_qr_instagram.png" alt="Instagram QR Code" />
-  <br />
-  <a class="button" href="https://www.instagram.com/arkisnow" target="_blank">Follow @arkisnow</a>
-
-  <footer>
-    <p>Made in Bali. Engineered with German Precision.</p>
-  </footer>
+  <img src="favicon.ico" alt="ARK Logo" class="logo" />
+  <h1>Follow us on Instagram</h1>
+  <img src="ark_qr_instagram.png" alt="Instagram QR Code" class="qr" />
+  <a class="btn" href="https://www.instagram.com/arkisnow" target="_blank">Go to @arkisnow</a>
 </body>
 </html>
