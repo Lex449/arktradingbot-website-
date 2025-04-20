@@ -1,1 +1,81 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A.R.K. – Features</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/logo.png" />
+</head>
+<body>
+
+  <header class="topbar">
+    <img src="assets/logo.png" alt="ARK Logo" class="logo" />
+
+    <nav class="navbar">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features-de.html">Deutsch</a></li>
+      </ul>
+    </nav>
+
+    <div class="language-switcher">
+      <img src="assets/de-flag.png" alt="Deutsch" onclick="setLanguage('de')" />
+      <img src="assets/en-flag.png" alt="English" onclick="setLanguage('en')" />
+    </div>
+  </header>
+
+  <main class="hero">
+    <h1>Features of A.R.K.</h1>
+    <p class="slogan">The tools that make your trading life easier.</p>
+
+    <div class="features-list">
+      <div class="feature">
+        <h2>📡 Live Signals</h2>
+        <p>Real-time signals for US100, US30, DE40 & more – right into your chat.</p>
+      </div>
+      <div class="feature">
+        <h2>⭐ Signal Ratings</h2>
+        <p>Each signal is rated – so you know how strong it is.</p>
+      </div>
+      <div class="feature">
+        <h2>🧠 Mentor Style</h2>
+        <p>Motivating tone, clear guidance – like a trading coach in your pocket.</p>
+      </div>
+      <div class="feature">
+        <h2>⚡ Break-Even Logic</h2>
+        <p>Automatic exit at zero loss – maximum control, zero stress.</p>
+      </div>
+      <div class="feature">
+        <h2>✈️ Market Alerts</h2>
+        <p>Daily reminders before DAX, Nasdaq, Dow & more open.</p>
+      </div>
+      <div class="feature">
+        <h2>☕ Humor & Motivation</h2>
+        <p>Fun feedback if you miss a trade – like Duolingo, but for money.</p>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <a href="index.html" class="btn telegram">Back to Start</a>
+    </div>
+  </main>
+
+  <script>
+    function setLanguage(lang) {
+      if (lang === 'de') {
+        window.location.href = 'features-de.html';
+      } else {
+        window.location.href = 'features.html';
+      }
+    }
+
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
