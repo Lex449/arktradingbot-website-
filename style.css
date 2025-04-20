@@ -1,3 +1,4 @@
+/* === Reset & Body === */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
+/* === Navbar === */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -36,7 +37,6 @@ body {
   cursor: pointer;
 }
 
-/* Mobiles Menü */
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -55,42 +55,14 @@ body {
   display: flex;
 }
 
-/* Hero Section */
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px 20px 40px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  margin-bottom: 16px;
-}
-
-.hero p {
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  color: #cccccc;
-  margin-bottom: 24px;
-}
-
-.cta-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 32px;
-}
-
+/* === Buttons === */
 .btn {
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
   font-size: 1rem;
-  width: fit-content;
 }
 
 .btn.primary {
@@ -108,30 +80,243 @@ body {
   opacity: 0.85;
 }
 
-.hero-images {
+/* === Hero === */
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #cccccc;
+  margin-bottom: 24px;
+}
+
+.cta-buttons {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+/* === Mockups === */
+.mockup-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.mockup-box {
+  width: 320px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.mockup-box.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mockup-frame {
+  background: radial-gradient(circle at center, #00ffe020, #00ffe005);
+  padding: 12px;
+  border-radius: 18px;
+  box-shadow: 0 0 28px rgba(0, 255, 224, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.mockup-frame:hover {
+  transform: scale(1.03);
+}
+
+.mockup-frame img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.mockup-label {
+  font-size: 0.95rem;
+  color: #bbbbbb;
+  margin-top: 8px;
+}
+
+.pulse {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 20px rgba(0,255,224,0.2); }
+  50% { box-shadow: 0 0 30px rgba(0,255,224,0.35); }
+  100% { box-shadow: 0 0 20px rgba(0,255,224,0.2); }
+}
+
+/* === Features === */
+.features {
+  padding: 60px 20px;
+  background: #111132;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 30px;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.feature {
+  max-width: 300px;
+}
+
+.feature h3 {
+  color: #00ffe0;
+  margin-bottom: 10px;
+}
+
+/* === Vergleich === */
+.vergleich {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.vergleich table {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.vergleich th,
+.vergleich td {
+  padding: 12px;
+  border: 1px solid #333;
+}
+
+.vergleich th {
+  background-color: #14143a;
+}
+
+/* === Preise === */
+.preise {
+  padding: 60px 20px;
+  background: #0e0e2c;
+  text-align: center;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #14143a;
+  border-radius: 12px;
+  padding: 30px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0,255,224,0.05);
+}
+
+.card.best {
+  border: 2px solid #00ffe0;
+}
+
+.card h3 {
+  color: #00ffe0;
+}
+
+.card ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+}
+
+/* === Testimonials === */
+.testimonials {
+  padding: 60px 20px;
+  background: #111132;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
   margin-top: 30px;
-  max-width: 1000px;
-  width: 100%;
 }
 
-.hero-images img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 255, 224, 0.15);
-  transition: transform 0.4s ease;
+.testimonial {
+  max-width: 300px;
+  font-style: italic;
+  color: #ccc;
 }
 
-.hero-images img:hover {
-  transform: scale(1.03);
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #00ffe0;
 }
 
-/* Cookie-Banner */
+/* === FAQ === */
+.faq {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.faq-item {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.faq-item h3 {
+  color: #00ffe0;
+  margin-bottom: 6px;
+}
+
+/* === Footer === */
+.footer {
+  padding: 30px 20px;
+  text-align: center;
+  background: #0a0a20;
+  color: #999;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* === Cookie Banner === */
 .cookie-banner {
   position: fixed;
   bottom: 0;
@@ -194,14 +379,26 @@ body {
   color: #00ffe0;
 }
 
-/* Responsive */
+/* === Responsive Anpassungen === */
 @media (max-width: 768px) {
   .btn {
     width: 100%;
     text-align: center;
   }
 
-  .cookie-box {
+  .mockup-box {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .feature-grid,
+  .pricing-cards,
+  .testimonial-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-item {
     padding: 0 10px;
   }
 }
