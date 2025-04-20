@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0d1117;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0e1117;
   color: #ffffff;
   text-align: center;
 }
 
-header {
-  padding: 40px 20px 20px;
+.hero {
+  padding: 60px 20px;
 }
 
 .logo {
@@ -16,75 +16,59 @@ header {
 }
 
 h1 {
-  font-size: 2.2em;
+  font-size: 2.5rem;
   margin: 0;
 }
 
-.subtitle {
-  font-size: 1.1em;
-  color: #aaaaaa;
-  margin-top: 10px;
+.tagline {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 20px;
 }
 
-.hero {
-  padding: 30px 20px;
+h2 {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
 }
 
-.hero h2 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
+.intro {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
 }
 
-.hero p {
-  font-size: 1.1em;
-  color: #cccccc;
+.btn-group {
+  margin-top: 20px;
 }
 
-.links {
-  margin: 30px 0;
-}
-
-.button {
+.btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 12px 25px;
   margin: 10px;
-  background-color: #238636;
-  color: white;
-  text-decoration: none;
   border-radius: 6px;
+  text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #2ea043;
+.insta {
+  background-color: #e1306c;
+  color: white;
 }
 
 .telegram {
-  background-color: #2a9fd6;
+  background-color: #0088cc;
+  color: white;
 }
 
-.telegram:hover {
-  background-color: #329fdb;
-}
-
-.lang-toggle button {
-  margin: 5px;
-  padding: 8px 16px;
-  border: none;
-  background-color: #21262d;
-  color: #ffffff;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.lang-toggle button:hover {
-  background-color: #30363d;
+.btn:hover {
+  opacity: 0.85;
 }
 
 footer {
-  margin-top: 40px;
   padding: 20px;
-  font-size: 0.9em;
-  color: #888;
+  font-size: 0.9rem;
+  color: #777;
 }
