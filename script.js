@@ -17,7 +17,6 @@ function cancelCookies() {
   localStorage.setItem('ark_cookies', 'declined');
 }
 
-// Cookie-Banner automatisch ausblenden, wenn bereits entschieden
 window.addEventListener('load', () => {
   const consent = localStorage.getItem('ark_cookies');
   if (consent === 'accepted' || consent === 'declined') {
