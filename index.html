@@ -1,60 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>A.R.K. – AI Trading Mentor</title>
+  <title>A.R.K. Trading Bot</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/logo.png" />
 </head>
 <body>
 
-  <header class="topbar">
-    <img src="assets/logo.png" alt="ARK Logo" class="logo" />
+<!-- Navigation -->
+<header class="navbar">
+  <button class="menu-icon" id="menu-toggle">&#9776;</button>
+  <div class="logo">A.R.K</div>
+  <div class="profile-icon">👤</div>
+</header>
 
-    <nav class="navbar">
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-      <ul id="nav-links" class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="index-de.html">Deutsch</a></li>
-      </ul>
-    </nav>
+<!-- Mobiles Menü -->
+<nav class="mobile-menu" id="mobile-menu">
+  <a href="#">Anmelden</a>
+  <a href="#">Registrieren</a>
+</nav>
 
-    <div class="language-switcher">
-      <img src="assets/de-flag.png" alt="Deutsch" onclick="setLanguage('de')" />
-      <img src="assets/en-flag.png" alt="English" onclick="setLanguage('en')" />
-    </div>
-  </header>
+<!-- Hauptbereich -->
+<section class="hero">
+  <h1>Der weltweit anpassbarste Trading-Bot</h1>
+  <p>Spare Zeit für die Dinge, die wirklich zählen.</p>
+  <div class="cta-buttons">
+    <a href="#" class="btn primary">Kostenlos starten</a>
+    <a href="#" class="btn secondary">Video ansehen (3 Min)</a>
+  </div>
+  <div class="hero-images">
+    <img src="phone.png" alt="Smartphone-Ansicht" />
+    <img src="chart.png" alt="Trading-Chart" />
+  </div>
+</section>
 
-  <main class="hero">
-    <h1>A.R.K. Trading Bot</h1>
-    <p class="slogan">Made in Bali. Engineered with German Precision.</p>
-    <h2>Your Personal AI Trading Mentor</h2>
-    <p class="description">
-      Empowering beginners and dreamers to master the markets – with clarity, confidence, and consistency.
+<!-- Cookie-Banner -->
+<div class="cookie-banner" id="cookie-banner">
+  <div class="cookie-box">
+    <h2>Cookies auf A.R.K</h2>
+    <p>
+      Diese Website verwendet Cookies, um sicherzustellen, dass alles funktioniert,
+      zur Analyse und für Marketingzwecke.
     </p>
-
-    <div class="buttons">
-      <a href="https://instagram.com/arktradingbot" class="btn instagram">Follow on Instagram</a>
-      <a href="https://t.me/arktradingteam" class="btn telegram">Join Telegram</a>
+    <ul>
+      <li><label><input type="checkbox" checked> Funktional – notwendig für die Website</label></li>
+      <li><label><input type="checkbox" checked> Analyse – hilft uns, die Seite zu verbessern</label></li>
+      <li><label><input type="checkbox" checked> Marketing – für Werbeanzeigen & Kampagnen</label></li>
+    </ul>
+    <div class="cookie-buttons">
+      <button onclick="acceptCookies()">Akzeptieren</button>
+      <button onclick="cancelCookies()">Ablehnen</button>
     </div>
-  </main>
+  </div>
+</div>
 
-  <script>
-    function setLanguage(lang) {
-      if (lang === 'de') {
-        window.location.href = 'index-de.html';
-      } else {
-        window.location.href = 'index.html';
-      }
-    }
-
-    function toggleMenu() {
-      const nav = document.getElementById("nav-links");
-      nav.classList.toggle("active");
-    }
-  </script>
-
+<script src="script.js"></script>
 </body>
 </html>
