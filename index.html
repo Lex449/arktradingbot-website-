@@ -2,33 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://arktradingbot.com/" />
-  <meta name="description" content="A.R.K. is your AI-powered trading mentor. Built in Bali. Engineered with German precision." />
-  <meta property="og:title" content="A.R.K. – Your AI Trading Mentor" />
-  <meta property="og:description" content="Join the future of trading with A.R.K. – your personal AI guide." />
-  <meta property="og:image" content="assets/ark-logo.png" />
-  <meta property="og:url" content="https://arktradingbot.com/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>A.R.K. – AI Trading Mentor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-  <header class="hero">
-    <img src="assets/ark-logo.png" alt="A.R.K. Logo" class="logo" />
-    <h1>A.R.K. Trading Bot</h1>
-    <p class="tagline">Made in Bali. Engineered with German Precision.</p>
-    <h2>Your Personal AI Trading Mentor</h2>
-    <p class="intro">Empowering beginners and dreamers to master the markets – with clarity, confidence, and consistency.</p>
-    <div class="btn-group">
-      <a href="https://www.instagram.com/arkisnow" class="btn insta">Follow on Instagram</a>
-      <a href="https://t.me/arktradingcommunity" class="btn telegram">Join Telegram</a>
+
+  <header class="topbar">
+    <img src="assets/logo.png" alt="ARK Logo" class="logo" />
+    <div class="language-switcher">
+      <img src="assets/de-flag.png" alt="Deutsch" onclick="setLanguage('de')" />
+      <img src="assets/en-flag.png" alt="English" onclick="setLanguage('en')" />
     </div>
   </header>
-  <footer>
-    <p>&copy; 2025 A.R.K. Trading Bot. All rights reserved.</p>
-  </footer>
+
+  <main class="hero">
+    <h1>A.R.K. Trading Bot</h1>
+    <p class="slogan">Made in Bali. Engineered with German Precision.</p>
+    <h2>Your Personal AI Trading Mentor</h2>
+    <p class="description">
+      Empowering beginners and dreamers to master the markets – with clarity, confidence, and consistency.
+    </p>
+
+    <div class="buttons">
+      <a href="https://instagram.com/arktradingbot" class="btn instagram">Follow on Instagram</a>
+      <a href="https://t.me/arktradingteam" class="btn telegram">Join Telegram</a>
+    </div>
+  </main>
+
+  <script>
+    function setLanguage(lang) {
+      if (lang === 'de') {
+        window.location.href = 'index-de.html';
+      } else {
+        window.location.href = 'index.html';
+      }
+    }
+  </script>
+
 </body>
 </html>
