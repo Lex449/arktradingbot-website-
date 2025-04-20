@@ -3,63 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARK Trading Bot</title>
-  <meta name="description" content="A.R.K. – Dein persönlicher KI-Trading-Mentor. Präzise. Menschlich. Echt." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://arktradingbot.com/" />
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="ARK Trading Bot" />
-  <meta property="og:description" content="A.R.K. hilft Anfängern und Visionären, den Markt zu meistern – mit Klarheit und Strategie." />
-  <meta property="og:image" content="https://arktradingbot.com/assets/og-banner.png" />
+  <meta name="description" content="A.R.K. is your AI-powered trading mentor. Built in Bali. Engineered with German precision." />
+  <meta property="og:title" content="A.R.K. – Your AI Trading Mentor" />
+  <meta property="og:description" content="Join the future of trading with A.R.K. – your personal AI guide." />
+  <meta property="og:image" content="assets/ark-logo.png" />
   <meta property="og:url" content="https://arktradingbot.com/" />
-  <meta property="og:type" content="website" />
-  
-  <!-- Favicon & Style -->
-  <link rel="icon" href="favicon.ico" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
+  <title>A.R.K. – AI Trading Mentor</title>
 </head>
 <body>
-  <header>
-    <img src="ark-logo.png" alt="ARK Logo" class="logo" />
-    <h1>ARK Trading Bot</h1>
-    <p class="subtitle">Made in Bali. Engineered with German Precision.</p>
+  <header class="hero">
+    <img src="assets/ark-logo.png" alt="A.R.K. Logo" class="logo" />
+    <h1>A.R.K. Trading Bot</h1>
+    <p class="tagline">Made in Bali. Engineered with German Precision.</p>
+    <h2>Your Personal AI Trading Mentor</h2>
+    <p class="intro">Empowering beginners and dreamers to master the markets – with clarity, confidence, and consistency.</p>
+    <div class="btn-group">
+      <a href="https://www.instagram.com/arkisnow" class="btn insta">Follow on Instagram</a>
+      <a href="https://t.me/arktradingcommunity" class="btn telegram">Join Telegram</a>
+    </div>
   </header>
-
-  <main>
-    <section class="hero">
-      <h2>Your Personal AI Trading Mentor</h2>
-      <p>Empowering beginners and dreamers to master the markets – with precision, clarity, and confidence.</p>
-      <div class="lang-toggle">
-        <button onclick="setLanguage('en')">English</button>
-        <button onclick="setLanguage('de')">Deutsch</button>
-      </div>
-    </section>
-
-    <section class="links">
-      <a href="https://www.instagram.com/arkisnow" target="_blank" class="button">Follow us on Instagram</a>
-      <a href="https://t.me/arktradingcommunity" target="_blank" class="button telegram">Join Telegram</a>
-    </section>
-  </main>
-
   <footer>
-    <p>&copy; 2025 ARK Trading Bot. All rights reserved.</p>
+    <p>&copy; 2025 A.R.K. Trading Bot. All rights reserved.</p>
   </footer>
-
-  <script>
-    function setLanguage(lang) {
-      if (lang === 'de') {
-        document.querySelector('h2').innerText = 'Dein persönlicher KI-Trading-Mentor';
-        document.querySelector('.hero p').innerText = 'Unterstützt Anfänger und Visionäre dabei, die Märkte zu meistern – mit Präzision, Klarheit und Vertrauen.';
-        document.querySelector('.button').innerText = 'Folge uns auf Instagram';
-        document.querySelector('.telegram').innerText = 'Telegram beitreten';
-      } else {
-        document.querySelector('h2').innerText = 'Your Personal AI Trading Mentor';
-        document.querySelector('.hero p').innerText = 'Empowering beginners and dreamers to master the markets – with precision, clarity, and confidence.';
-        document.querySelector('.button').innerText = 'Follow us on Instagram';
-        document.querySelector('.telegram').innerText = 'Join Telegram';
-      }
-    }
-  </script>
 </body>
 </html>
