@@ -1,37 +1,63 @@
-/* === Buttons === */
+/* === Buttons (Futuristisches Design) === */
 .btn {
   padding: 12px 24px;
-  border-radius: 8px;
+  border-radius: 12px;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s ease;
   font-size: 1rem;
-  display: inline-block;
   text-align: center;
+  display: inline-block;
   cursor: pointer;
-}
-
-.btn.primary {
-  background-color: #00ffe0;
-  color: #0e0e2c;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
   border: none;
 }
 
-.btn.secondary {
-  background-color: transparent;
+/* Glowing Primary CTA */
+.btn.glow {
+  background: #00ffe0;
+  color: #0e0e2c;
+  box-shadow: 0 0 12px #00ffe0, 0 0 24px #00ffe0aa;
+}
+
+.btn.glow:hover {
+  background: #00dbcd;
+  box-shadow: 0 0 20px #00ffe0, 0 0 35px #00ffe0cc;
+}
+
+/* Outline Glow Button */
+.btn.outline-glow {
+  background: transparent;
   color: #00ffe0;
   border: 2px solid #00ffe0;
+  box-shadow: 0 0 8px #00ffe055;
 }
 
-.btn.telegram {
+.btn.outline-glow:hover {
+  background-color: rgba(0, 255, 224, 0.1);
+  box-shadow: 0 0 18px #00ffe0aa;
+}
+
+/* Telegram Button Glow */
+.btn.telegram-glow {
   background-color: #229ED9;
-  color: white;
-  border: none;
+  color: #ffffff;
+  box-shadow: 0 0 12px #229ED9aa;
 }
 
-.btn.primary:hover,
-.btn.secondary:hover,
-.btn.telegram:hover {
-  opacity: 0.9;
+.btn.telegram-glow:hover {
   background-color: #1c86ba;
+  box-shadow: 0 0 18px #229ED9cc;
+}
+
+/* Responsives Verhalten */
+@media (max-width: 768px) {
+  .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+  }
 }
