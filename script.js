@@ -1,40 +1,23 @@
-// === Menü-Toggle ===
-const menuToggle = document.getElementById('menu-toggle');
-const mobileMenu = document.getElementById('mobile-menu');
-
-menuToggle.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active');
+// === Menü-Toggle für Mobile ===
+document.getElementById('menu-toggle')?.addEventListener('click', () => {
+  const menu = document.getElementById('mobile-menu');
+  if (menu) menu.classList.toggle('active');
 });
 
-// === Cookie-Banner ===
+// === Cookie-Banner Logik ===
 function acceptCookies() {
   document.getElementById('cookie-banner').style.display = 'none';
-  localStorage.setItem('ark_cookies', 'accepted');
+  localStorage.setItem('cookiesAccepted', 'true');
 }
 
 function cancelCookies() {
   document.getElementById('cookie-banner').style.display = 'none';
-  localStorage.setItem('ark_cookies', 'declined');
+  localStorage.setItem('cookiesAccepted', 'false');
 }
 
 window.addEventListener('load', () => {
-  const consent = localStorage.getItem('ark_cookies');
-  if (consent === 'accepted' || consent === 'declined') {
+  const status = localStorage.getItem('cookiesAccepted');
+  if (status === 'true' || status === 'false') {
     document.getElementById('cookie-banner').style.display = 'none';
   }
 });
-
-// === Scroll-Effekte (Mockups & spätere Animationen) ===
-const fadeIns = document.querySelectorAll('.fade-in');
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, {
-  threshold: 0.2
-});
-
-fadeIns.forEach(el => observer.observe(el));
