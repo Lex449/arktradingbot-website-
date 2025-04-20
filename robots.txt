@@ -1,4 +1,6 @@
+# Alle Bots dürfen crawlen
 User-agent: *
-Allow: /
+Disallow:
 
+# Sitemap für Suchmaschinen
 Sitemap: https://arktradingbot.com/sitemap.xml
