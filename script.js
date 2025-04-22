@@ -1,9 +1,10 @@
-// Öffnen und Schließen des Dropdown-Menüs
-document.addEventListener('DOMContentLoaded', function () {
-    const menuButton = document.querySelector('#menu-button');
-    const menu = document.querySelector('#menu');
-
-    menuButton.addEventListener('click', function () {
-        menu.classList.toggle('open');
+// Smooth Scroll to Sections
+document.querySelectorAll('.cta-btn').forEach(button => {
+  button.addEventListener('click', function(event) {
+    event.preventDefault();
+    const target = this.getAttribute('href');
+    document.querySelector(target).scrollIntoView({
+      behavior: 'smooth'
     });
+  });
 });
