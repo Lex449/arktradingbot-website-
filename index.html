@@ -1,229 +1,53 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>A.R.K. Trading Bot</title>
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- SEO & Social Preview -->
-  <meta name="description" content="A.R.K. Trading Bot – dein smarter Mentor für profitables Daytrading.">
-  <meta name="keywords" content="Trading, Bot, Telegram, Daytrading, Signale, Analyse, AI, A.R.K.">
-  <meta name="author" content="A.R.K. Team">
-  <meta name="theme-color" content="#00ffe0" />
-
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:title" content="A.R.K. Trading Bot">
-  <meta property="og:description" content="Der weltweit anpassbarste Trading-Bot. Glasklare Signale. Zero Overload.">
-  <meta property="og:image" content="preview.jpg">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://arktradingbot.com">
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.R.K. Trading Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
+    <header>
+        <img src="assets/ark-logo.png" alt="ARK Logo" id="logo">
+        <h1>Your Personal AI Trading Mentor</h1>
+        <p>Empowering beginners and dreamers to master the markets — with precision, clarity, and confidence.</p>
+    </header>
 
-<!-- ANIMIERTER GLOW-HINTERGRUND -->
-<div class="animated-glow">
-  <span class="glow-1"></span>
-  <span class="glow-2"></span>
-  <span class="glow-3"></span>
-</div>
+    <section id="why-ark">
+        <h2>Why A.R.K.?</h2>
+        <p>A.R.K. helps beginners and visionaries navigate the markets with precision, firmness, and authenticity. We provide clear insights and a strategic community to support your trading journey.</p>
+    </section>
 
-<!-- Navigation -->
-<header class="navbar">
-  <button class="menu-icon" id="menu-toggle">&#9776;</button>
-  <div class="logo">A.R.K</div>
-  <div class="profile-icon">👤</div>
-</header>
+    <section id="navigate-markets">
+        <h2>Navigate Markets With Confidence</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="assets/clear-signals.png" alt="Clear Signals">
+                <p>Clear Signals</p>
+            </div>
+            <div class="feature">
+                <img src="assets/human-approach.png" alt="Human Approach">
+                <p>Human Approach</p>
+            </div>
+            <div class="feature">
+                <img src="assets/strategic-community.png" alt="Strategic Community">
+                <p>Strategic Community</p>
+            </div>
+        </div>
+    </section>
 
-<nav class="mobile-menu" id="mobile-menu">
-  <a href="#">Anmelden</a>
-  <a href="#">Registrieren</a>
-</nav>
+    <section id="cta">
+        <h2>Ready to Master the Markets?</h2>
+        <p>Take the first step towards precise and confident trading with A.R.K.</p>
+        <a href="https://t.me/arktradingcommunity" class="cta-btn">Join Telegram</a>
+        <a href="https://instagram.com/arktradingbot" class="cta-btn">Follow on Instagram</a>
+    </section>
 
-<!-- Hero -->
-<section class="hero">
-  <h1>Der weltweit anpassbarste Trading-Bot</h1>
-  <p>Spare Zeit für die Dinge, die wirklich zählen.</p>
-  <div class="cta-buttons">
-    <a href="#" class="btn glow">Kostenlos starten</a>
-    <a href="#" class="btn outline-glow">Video ansehen (3 Min)</a>
-    <a href="https://t.me/arktradingcommunity" target="_blank" class="btn telegram-glow">
-      Telegram Community beitreten
-    </a>
-  </div>
-  <div class="mockup-row fade-in">
-    <div class="mockup-box pulse">
-      <div class="mockup-frame">
-        <img src="telegram.png" alt="Telegram Bot" />
-      </div>
-      <p class="mockup-label">ARK-Signale auf Telegram</p>
-    </div>
-    <div class="mockup-box pulse">
-      <div class="mockup-frame">
-        <img src="chart.png" alt="US100 Chart" />
-      </div>
-      <p class="mockup-label">US100 Analyse auf TradingView</p>
-    </div>
-  </div>
-</section>
+    <footer>
+        <p>&copy; 2025 A.R.K. Trading Bot. All rights reserved.</p>
+    </footer>
 
-<!-- Features -->
-<section class="features">
-  <h2>Warum A.R.K.?</h2>
-  <div class="feature-grid">
-    <div class="feature">
-      <h3>Live-Signale</h3>
-      <p>Sofortige Telegram-Alerts mit präzisen Einstiegen.</p>
-    </div>
-    <div class="feature">
-      <h3>Mentor-Stil</h3>
-      <p>Motivierender Ton & klare Empfehlungen statt Bot-Gefühl.</p>
-    </div>
-    <div class="feature">
-      <h3>Break-Even Logik</h3>
-      <p>Automatischer Schutz vor Verlust bei Trade-Rücklauf.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Vergleich -->
-<section class="vergleich">
-  <h2>Free vs. Premium</h2>
-  <table>
-    <tr>
-      <th>Funktion</th>
-      <th>Free</th>
-      <th>Premium</th>
-    </tr>
-    <tr>
-      <td>Telegram-Signale</td>
-      <td>3x täglich</td>
-      <td>Unbegrenzt</td>
-    </tr>
-    <tr>
-      <td>Break-Even Automatik</td>
-      <td>-</td>
-      <td>✓</td>
-    </tr>
-    <tr>
-      <td>Support per WhatsApp</td>
-      <td>-</td>
-      <td>✓</td>
-    </tr>
-    <tr>
-      <td>Live-Marktanalyse</td>
-      <td>-</td>
-      <td>✓</td>
-    </tr>
-  </table>
-</section>
-
-<!-- Preise -->
-<section class="preise">
-  <h2>Preise & Pakete</h2>
-  <div class="pricing-cards">
-    <div class="card">
-      <h3>Free</h3>
-      <p>0 € / Monat</p>
-      <ul>
-        <li>3x Signale täglich</li>
-        <li>Basiszugang</li>
-      </ul>
-      <a href="#" class="btn outline-glow">Jetzt testen</a>
-    </div>
-    <div class="card best">
-      <h3>Pro</h3>
-      <p>19 € / Monat</p>
-      <ul>
-        <li>Alle Signale</li>
-        <li>Break-Even Logik</li>
-        <li>Support</li>
-      </ul>
-      <a href="#" class="btn glow">Jetzt upgraden</a>
-    </div>
-    <div class="card">
-      <h3>Enterprise</h3>
-      <p>59 € / Monat</p>
-      <ul>
-        <li>API-Zugang</li>
-        <li>Indikator-Setups</li>
-        <li>Team-Account</li>
-      </ul>
-      <a href="#" class="btn outline-glow">Kontakt</a>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials -->
-<section class="testimonials">
-  <h2>Was Nutzer sagen</h2>
-  <div class="testimonial-grid">
-    <div class="testimonial">
-      <p>„Ich habe endlich Kontrolle über meine Trades – danke A.R.K.!“</p>
-      <span>- Jonas M.</span>
-    </div>
-    <div class="testimonial">
-      <p>„Die Telegram-Signale sind der Hammer. Einfach & effektiv.“</p>
-      <span>- Carina F.</span>
-    </div>
-    <div class="testimonial">
-      <p>„Mentor-Stil statt Bot – fühlt sich menschlich an!“</p>
-      <span>- Daniel H.</span>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="faq">
-  <h2>Häufige Fragen</h2>
-  <div class="faq-item">
-    <h3>Wie erhalte ich die Signale?</h3>
-    <p>Du wirst direkt per Telegram informiert – keine App nötig.</p>
-  </div>
-  <div class="faq-item">
-    <h3>Muss ich Vorkenntnisse haben?</h3>
-    <p>Nein, A.R.K. ist für Anfänger gemacht – du wirst geführt.</p>
-  </div>
-  <div class="faq-item">
-    <h3>Wie kündige ich?</h3>
-    <p>Jederzeit kündbar per Klick im Dashboard – ohne Stress.</p>
-  </div>
-  <div class="faq-item">
-    <h3>Wie sicher ist das?</h3>
-    <p>Du bekommst keine Empfehlungen zum Investieren – nur technische Signale.</p>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-  <p>© 2025 A.R.K. Trading Bot – Made in Bali. Engineered with German Precision.</p>
-  <div class="footer-links">
-    <a href="#">Impressum</a>
-    <a href="#">Datenschutz</a>
-    <a href="#">Kontakt</a>
-  </div>
-</footer>
-
-<!-- Cookie-Banner -->
-<div class="cookie-banner" id="cookie-banner">
-  <div class="cookie-box">
-    <h2>Cookies auf A.R.K</h2>
-    <p>Diese Website verwendet Cookies für Funktionalität, Analyse und Marketing.</p>
-    <ul>
-      <li><label><input type="checkbox" checked> Funktional</label></li>
-      <li><label><input type="checkbox" checked> Analyse</label></li>
-      <li><label><input type="checkbox" checked> Marketing</label></li>
-    </ul>
-    <div class="cookie-buttons">
-      <button onclick="acceptCookies()">Akzeptieren</button>
-      <button onclick="cancelCookies()">Ablehnen</button>
-    </div>
-  </div>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
