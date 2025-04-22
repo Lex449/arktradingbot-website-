@@ -1,215 +1,116 @@
-/* Grundlegendes Reset für die Seite */
+/* Global reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Allgemeine Körper-Styles */
+/* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #1a1a1a;
     color: #fff;
     line-height: 1.6;
-    font-size: 16px;
-    background-image: linear-gradient(to bottom, #0a3d68, #1a1a1a);
-    height: 100%;
 }
 
 /* Header Styling */
 header {
     text-align: center;
-    padding: 80px 20px;
+    padding: 50px 20px;
     background-color: #0a3d68;
-    border-bottom: 2px solid #fff;
-    position: relative;
-    z-index: 10;
 }
 
 #logo {
     width: 150px;
     margin-bottom: 20px;
-    animation: fadeIn 2s ease-out;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-shadow: 2px 2px #000;
-    animation: slideIn 1s ease-out;
-}
-
-/* Why A.R.K. & Navigation Section */
-#why-ark, #navigate-markets {
-    padding: 60px 20px;
-    text-align: center;
-    animation: fadeIn 1.5s ease-out;
-}
-
-#why-ark h2, #navigate-markets h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #28a745;
+    margin-bottom: 10px;
 }
 
-/* Feature Section */
-.features {
+/* Features Section */
+#features {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.feature-list {
     display: flex;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap;
-    margin-top: 50px;
 }
 
 .feature {
     flex: 1;
     text-align: center;
-    max-width: 200px;
-    margin: 20px;
-    animation: bounceIn 1s ease-out;
 }
 
 .feature img {
     width: 80px;
     margin-bottom: 10px;
-    transition: transform 0.3s ease;
 }
 
-.feature img:hover {
-    transform: scale(1.1);
-}
-
-.feature p {
-    font-size: 1rem;
-    margin-top: 10px;
-    color: #ccc;
-}
-
-/* Call-to-Action Section */
-#cta {
-    padding: 60px 20px;
-    background-color: #28a745;
+/* Social Media Button Styling */
+#social-media {
     text-align: center;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    position: relative;
-    z-index: 10;
+    padding: 40px 20px;
+    background-color: #0a3d68;
 }
 
+#social-media a {
+    background-color: #0099ff;
+    padding: 10px 30px;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#social-media a:hover {
+    background-color: #007acc;
+}
+
+/* Call-to-Action Button */
 .cta-btn {
     display: inline-block;
     background-color: #28a745;
     color: #fff;
     padding: 15px 30px;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     border-radius: 5px;
     margin: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
 .cta-btn:hover {
     background-color: #218838;
-    transform: translateY(-3px);
 }
 
-.cta-btn:active {
-    background-color: #1e7e34;
-    transform: translateY(1px);
-}
-
-/* Footer Section */
+/* Footer Styling */
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     background-color: #0a3d68;
     font-size: 1rem;
-    color: #fff;
-    font-weight: bold;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 0 10px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Animationen */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes bounceIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-/* Responsives Design */
+/* Media Query for smaller screens */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    #logo {
-        width: 120px;
-    }
-
-    #why-ark, #navigate-markets {
-        padding: 40px 20px;
-    }
-
-    .features {
+    .feature-list {
         flex-direction: column;
         align-items: center;
     }
 
     .feature {
-        max-width: 100%;
-    }
-
-    footer {
-        padding: 20px;
-    }
-
-    .cta-btn {
-        font-size: 1.1rem;
-        padding: 12px 25px;
+        margin-bottom: 20px;
     }
 }
