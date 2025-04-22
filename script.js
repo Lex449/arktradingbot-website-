@@ -1,23 +1,9 @@
-// === Menü-Toggle für Mobile ===
-document.getElementById('menu-toggle')?.addEventListener('click', () => {
-  const menu = document.getElementById('mobile-menu');
-  if (menu) menu.classList.toggle('active');
-});
+// Öffnen und Schließen des Dropdown-Menüs
+document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
 
-// === Cookie-Banner Logik ===
-function acceptCookies() {
-  document.getElementById('cookie-banner').style.display = 'none';
-  localStorage.setItem('cookiesAccepted', 'true');
-}
-
-function cancelCookies() {
-  document.getElementById('cookie-banner').style.display = 'none';
-  localStorage.setItem('cookiesAccepted', 'false');
-}
-
-window.addEventListener('load', () => {
-  const status = localStorage.getItem('cookiesAccepted');
-  if (status === 'true' || status === 'false') {
-    document.getElementById('cookie-banner').style.display = 'none';
-  }
+    menuButton.addEventListener('click', function () {
+        menu.classList.toggle('open');
+    });
 });
