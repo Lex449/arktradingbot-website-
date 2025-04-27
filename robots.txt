@@ -1,2 +1,11 @@
+# robots.txt for arktradingbot.com
+# Ultra Clean Setup – WWG (private Bereich)
+
 User-agent: *
+Disallow: /wwg/
 Allow: /
+
+# Sitemap location
+Sitemap: https://arktradingbot.com/sitemap.xml
+
+Host: arktradingbot.com
