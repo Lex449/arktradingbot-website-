@@ -62,7 +62,7 @@ Der aktuelle Fokus liegt auf **Top-Aktien** – mit geplanter Erweiterung auf **
 ## Kontakt
 
 - Telegram: [@arktradingteam](https://t.me/arktradingteam)
-- E-Mail: [hello@arktradingbot.com](mailto:hello@arktradingbot.com)
+- E-Mail: hello@arktradingbot.com
 
 ---
 
